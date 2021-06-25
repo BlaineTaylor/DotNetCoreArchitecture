@@ -19,9 +19,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GloboTicket.TicketManagemen
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GloboTicket.TicketManagement.Application", "GloboTicket.TicketManagement.Application\GloboTicket.TicketManagement.Application.csproj", "{38DF020C-61E1-4DC4-B56F-AFA5B4076F14}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GloboTicket.TicketManagement.Persistence", "GloboTicket.TicketManagement.Persistence\GloboTicket.TicketManagement.Persistence.csproj", "{9AE7CB80-9B1F-4C54-AC37-BE56EB898736}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GloboTicket.TicketManagement.Persistence", "GloboTicket.TicketManagement.Persistence\GloboTicket.TicketManagement.Persistence.csproj", "{9AE7CB80-9B1F-4C54-AC37-BE56EB898736}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GloboTicket.TicketManagment.Infrastructure", "GloboTicket.TicketManagment.Infrastructure\GloboTicket.TicketManagment.Infrastructure.csproj", "{D8DB4C99-197C-402A-B7DD-3DC385D8387B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GloboTicket.TicketManagment.Infrastructure", "GloboTicket.TicketManagment.Infrastructure\GloboTicket.TicketManagment.Infrastructure.csproj", "{D8DB4C99-197C-402A-B7DD-3DC385D8387B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GloboTicket.TicketManagement.Api", "GloboTicket.TicketManagement.Api\GloboTicket.TicketManagement.Api.csproj", "{FDF2DD8C-5C77-43DD-9CFE-5FA436B4EEF5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{D8DB4C99-197C-402A-B7DD-3DC385D8387B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D8DB4C99-197C-402A-B7DD-3DC385D8387B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D8DB4C99-197C-402A-B7DD-3DC385D8387B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDF2DD8C-5C77-43DD-9CFE-5FA436B4EEF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDF2DD8C-5C77-43DD-9CFE-5FA436B4EEF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDF2DD8C-5C77-43DD-9CFE-5FA436B4EEF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDF2DD8C-5C77-43DD-9CFE-5FA436B4EEF5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -58,6 +64,7 @@ Global
 		{38DF020C-61E1-4DC4-B56F-AFA5B4076F14} = {3191D6B5-D39D-4567-B679-3F018DF69B9D}
 		{9AE7CB80-9B1F-4C54-AC37-BE56EB898736} = {814FEEAE-3A1D-4AAB-A8E4-E7A88CD4817E}
 		{D8DB4C99-197C-402A-B7DD-3DC385D8387B} = {814FEEAE-3A1D-4AAB-A8E4-E7A88CD4817E}
+		{FDF2DD8C-5C77-43DD-9CFE-5FA436B4EEF5} = {690FD8B1-2F57-4162-AFCD-A1DB8C54189B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F6AE0E69-C8FE-493A-A56F-422D79BBA1FA}
