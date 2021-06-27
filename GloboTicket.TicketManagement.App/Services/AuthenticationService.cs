@@ -2,6 +2,7 @@
 using GloboTicket.TicketManagement.App.Auth;
 using GloboTicket.TicketManagement.App.Contracts;
 using GloboTicket.TicketManagement.App.Services.Base;
+using GloboTicket.TicketManagement.Application.Models.Authentication;
 using Microsoft.AspNetCore.Components.Authorization;
 using System;
 using System.Net.Http.Headers;
