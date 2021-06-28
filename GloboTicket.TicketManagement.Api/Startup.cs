@@ -1,5 +1,9 @@
+using GloboTicket.TicketManagement.Api.Middleware;
+using GloboTicket.TicketManagement.Api.Services;
 using GloboTicket.TicketManagement.Api.Utility;
 using GloboTicket.TicketManagement.Application;
+using GloboTicket.TicketManagement.Application.Contracts;
+using GloboTicket.TicketManagement.Identity;
 using GloboTicket.TicketManagement.Infrastructure;
 using GloboTicket.TicketManagement.Persistence;
 using Microsoft.AspNetCore.Builder;
@@ -33,6 +37,9 @@ namespace GloboTicket.TicketManagement.Api
             services.AddApplicationServices();
             services.AddInfrastructureServices(Configuration);
             services.AddPersistenceServices(Configuration);
+            services.AddIdentityServices(Configuration);
+
+            services.AddScoped<ILoggedInUserService, LoggedInUserService>();
 
             services.AddControllers();
 
@@ -97,6 +104,7 @@ namespace GloboTicket.TicketManagement.Api
 
             app.UseHttpsRedirection();
             app.UseRouting();
+            app.UseAuthentication();
 
             app.UseSwagger();
             app.UseSwaggerUI(c =>
@@ -104,7 +112,11 @@ namespace GloboTicket.TicketManagement.Api
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "GloboTicket Ticket Managment API");
             });
 
+            app.UseCustomExceptionHandler();
+
             app.UseCors("Open");
+
+            app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {
