@@ -1,4 +1,5 @@
-﻿using GloboTicket.TicketManagement.Application.Features.Events;
+﻿using GloboTicket.TicketManagement.Api.Utility;
+using GloboTicket.TicketManagement.Application.Features.Events;
 using GloboTicket.TicketManagement.Application.Features.Events.Commands.CreateEvent;
 using GloboTicket.TicketManagement.Application.Features.Events.Commands.DeleteEvent;
 using GloboTicket.TicketManagement.Application.Features.Events.Commands.UpdateEvent;
