@@ -18,7 +18,7 @@ namespace GloboTicket.TicketManagement.Application.Features.Events.Commands.Crea
         private readonly IEmailService _emailService;
         private readonly ILogger _logger;
 
-        public CreateEventCommandHandler(IMapper mapper, IEventRepository eventRepository, IEmailService emailService, ILogger logger)
+        public CreateEventCommandHandler(IMapper mapper, IEventRepository eventRepository, IEmailService emailService, ILogger<CreateEventCommandHandler> logger)
         {
             _mapper = mapper;
             _eventRepository = eventRepository;

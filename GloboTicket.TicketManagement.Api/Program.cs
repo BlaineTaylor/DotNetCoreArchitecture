@@ -15,7 +15,7 @@ namespace GloboTicket.TicketManagement.Api
 {
     public class Program
     {
-        public async static void Main(string[] args)
+        public static async Task Main(string[] args)
         {
             var config = new ConfigurationBuilder()
                 .AddJsonFile("appsettings.json")
